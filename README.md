@@ -31,15 +31,16 @@ Treinamento de um NotebookLM sobre OSINT em dados púbicos
 
 | Objetivo | Prompt base | Melhoria para troubleshooting |
 |---|---|---|
-| Definir escopo da investigação | "Liste os pontos centrais do tema X para uma investigação OSINT inicial." | Adicionar recorte temporal, geográfico e palavras-chave negativas (ex.: "não incluir opinião"). |
-| Levantar fontes públicas confiáveis | "Quais fontes públicas oficiais posso usar para pesquisar X?" | Solicitar classificação por tipo de fonte (governo, imprensa, base acadêmica) e nível de confiabilidade. |
+| Definir escopo da investigação | "Liste os pontos centrais do tema para uma investigação inicial" | Adicionar recorte temporal, geográfico se o tema permitir e palavras-chave para restrição de forma negativa |
+| Levantar fontes públicas confiáveis | "Quais fontes públicas oficiais posso usar para pesquisar? Fazer comparações e relações de fontes com mais de 5 ou 10 citações" | Solicitar classificação por tipo de fonte (governo, imprensa, base acadêmica) e nível de confiabilidade |
 | Validar uma informação | "Como verificar se a informação Y é verdadeira com dados públicos?" | Exigir no mínimo 3 fontes independentes e critério de divergência entre fontes. |
-| Organizar evidências | "Monte uma estrutura para registrar achados de OSINT sobre X." | Pedir modelo com campos obrigatórios: fonte, data, URL, evidência, hipótese, status de validação. |
-| Resolver bloqueio de pesquisa | "Estou sem novos resultados sobre X, quais caminhos alternativos seguir?" | Solicitar reformulação de termos, sinônimos, buscas por idioma e inversão de perspectiva (pessoa, local, evento). |
-| Refinar hipótese | "Com base nos achados, quais hipóteses são mais plausíveis sobre X?" | Pedir evidência pró/contra para cada hipótese e indicar lacunas de dados antes de concluir. |
+| Organizar evidências | "Monte uma estrutura para registrar as informações." | Pedir modelo com campos obrigatórios: fonte, data, URL, evidência, hipótese, status de validação |
+| Resolver bloqueio de pesquisa | "Estou sem novos resultados, quais caminhos alternativos posso tomar?" | Solicitar reformulação de termos, sinônimos, buscas por idioma |
+| Refinar hipótese | "Com base nos achados, quais hipóteses são mais plausíveis?" | Pedir evidência pró/contra para cada hipótese e indicar lacunas de dados antes de concluir. |
 
 ### Análise da estrutura
-Uma estrutura básica eficiente de OSINT em dados públicos segue: **objetivo claro → coleta em fontes abertas → validação cruzada → organização das evidências → síntese crítica**. Esse fluxo reduz ruído, melhora rastreabilidade e facilita revisão por terceiros.
+Uma estrutura básica eficiente de OSINT em dados públicos segue: **objetivo claro → coleta em fontes abertas → validação cruzada → organização das evidências → síntese crítica**. Esse fluxo reduz ruído, melhora rastreabilidade e facilita revisão por terceiros e fornece transparência
 
-### Resumo prático
-Para aplicar hoje: defina uma pergunta específica, colete apenas fontes públicas relevantes, valide com múltiplas origens, registre tudo de forma padronizada e conclua com base em evidências. Em OSINT, método e criticidade valem mais que volume de dados.
+Obs:
+Se houver erros de fontes como ocorreu comigo, recomendo buscar outras fontes com o mesmo artigo, em casos de assuntos mais complexos, ou outras fontes de notícias.
+
